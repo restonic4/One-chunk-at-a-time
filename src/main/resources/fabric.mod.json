@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "ocaat",
+  "version": "${version}",
+  "name": "One chunk at a time",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "Apache-2.0",
+  "icon": "assets/ocaat/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.restonic4.ocaat.client.MainClient"
+    ],
+    "main": [
+      "com.restonic4.ocaat.Main"
+    ]
+  },
+  "mixins": [
+    "ocaat.mixins.json",
+    {
+      "config": "ocaat.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
