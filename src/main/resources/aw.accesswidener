@@ -1,0 +1,10 @@
+accessWidener	v1	named
+
+accessible class net/minecraft/server/level/ServerChunkCache$MainThreadExecutor
+accessible method net/minecraft/server/level/ServerChunkCache getChunkFutureMainThread (IILnet/minecraft/world/level/chunk/status/ChunkStatus;Z)Ljava/util/concurrent/CompletableFuture;
+accessible method net/minecraft/server/level/ServerChunkCache storeInCache (JLnet/minecraft/world/level/chunk/ChunkAccess;Lnet/minecraft/world/level/chunk/status/ChunkStatus;)V
+accessible method net/minecraft/server/level/ServerChunkCache getVisibleChunkIfPresent (J)Lnet/minecraft/server/level/ChunkHolder;
+accessible method net/minecraft/server/level/ServerChunkCache runDistanceManagerUpdates ()Z
+accessible method net/minecraft/server/level/ServerChunkCache chunkAbsent (Lnet/minecraft/server/level/ChunkHolder;I)Z
+accessible field net/minecraft/server/level/ServerChunkCache distanceManager Lnet/minecraft/server/level/DistanceManager;
+accessible field net/minecraft/world/level/chunk/ChunkAccess pendingBlockEntities Ljava/util/Map;
